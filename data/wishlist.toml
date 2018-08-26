@@ -6,69 +6,16 @@
 #photo   = "scd-4-gyuto"
 
 [[items]]
-name     = "Samsung Galaxy S9+"
-features = "black"
-photo    = "galaxy-s9-plus"
-url      = "https://www.verizonwireless.com/smartphones/samsung-galaxy-s9-plus/"
-
-[[items]]
-name     = "MicroSD card"
-features = "200 GB"
-photo    = "microsd-200gb"
-price    = 60
-url      = "https://www.amazon.com/Sandisk-Ultra-200GB-Micro-Adapter/dp/B073JY5T7T"
-
-[[items]]
-name     = "Jowo #5 nib"
-price    = 15
-features = "M tip, nib only"
-photo    = "jowo-5"
-url      = "https://www.fpnibs.com/standard/205-9038-jowo-size-5-steel-nib-unit-m-tip.html"
-
-[[items]]
-name     = "Replacement headphone earpads"
-price    = 28
-photo    = "ath-earpads"
-features = "black"
-url      = "https://www.amazon.com/dp/B00ZY8PGJI/"
-
-[[items]]
-name     = "Round shoelaces"
-features = "black, 36″"
-price    = 9
-photo    = "round-laces"
-url      = "https://www.amazon.com/OrthoStep-Round-Athletic-Black-Shoelaces/dp/B00L89LOV6/?th = 1&psc = 1"
-
-[[items]]
-name     = "Chup socks"
-price    = 35
-photo    = "chup-fuar"
-url      = "https://chupsocks.com/"
-
-[[items]]
-name     = "UE Boom bluetooth speaker"
-features = "refurbished"
-price    = 63
-url      = "https://www.amazon.com/Wireless-Speaker-Black-Certified-Refurbished/dp/B00U8FJUDU/"
-photo    = "ue-boom"
-
-[[items]]
-name  = "Technics turntable ground wire"
-price = 10
-url   = "https://www.ebay.com/sch/i.html?&_nkw=technics+ground"
-photo = "technics-ground"
-
-[[items]]
-name     = "Klein 8″ scissors"
-price    = 30
-photo    = "klein-8in"
-url      = "https://www.amazon.com/dp/B001408NBS/"
-
-[[items]]
 name     = "Klein electrician’s scissors"
 price    = 16
 photo    = "klein-electrician"
 url      = "https://www.amazon.com/dp/B000VL03NC/"
+
+[[items]]
+name     = "Helping hand"
+price    = 7
+photo    = "helping-hand"
+url      = "https://www.amazon.com/Neiko-01902-Adjustable-Magnifying-Alligator/dp/B000P42O3C/"
 
 [[items]]
 name     = "Etymotic cable"
@@ -108,6 +55,27 @@ url      = "https://www.amazon.com/dp/B00EU8MLQY"
 price    = 25
 photo    = "nagao-higonokami"
 
+[[items]]
+name     = "Computer mouse"
+features = "Razer Basilisk"
+price    = 60
+photo    = "razer-basilisk"
+url      = "https://www.amazon.com/dp/B0752VK4XV/"
+
+[[items]]
+name     = "Objective 2 headphone amplifier"
+features = "rear power jack"
+price    = 100
+url      = "https://www.jdslabs.com/products/167/objective2-headphone-amplifier-b-stock/"
+photo    = "jds-objective2"
+
+[[items]]
+name     = "Soldering station"
+features = "Hakko FX888D"
+price    = 96
+photo    = "hakko-fx888d"
+url      = "https://www.amazon.com/Hakko-FX888D-23BY-Digital-Soldering-Station/dp/B00ANZRT4M"
+
 #[[items]]
 #name    = "Unicorn jacket"
 #price   = 22
@@ -143,11 +111,6 @@ photo    = "nagao-higonokami"
 #photo   = "pilot-namiki"
 
 #[[items]]
-#name    = "Money to Buy a Balisong"
-#price   = 250
-#photo   = "bb"
-
-#[[items]]
 #name    = "Stainless steel comb"
 #url     = "http://www.amazon.com/dp/B00L2AWTOM/"
 #price   = 36
@@ -165,10 +128,3 @@ features = "red / matte black"
 price    = 32
 url      = "https://www.dsptch.com/collections/wrist/products/camera-wrist-strap-red-matte-black"
 photo    = "dsptch-strap"
-
-[[items]]
-name     = "Objective 2 headphone amplifier"
-features = "rear power jack"
-price    = 100
-url      = "https://www.jdslabs.com/products/167/objective2-headphone-amplifier-b-stock/"
-photo    = "jds-objective2"
