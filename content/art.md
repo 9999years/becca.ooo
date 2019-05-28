@@ -1,6 +1,5 @@
 +++
 title="art around the web"
-center=true
 description="links to my art; mograph to photography"
 +++
 

@@ -1,7 +1,8 @@
 +++
-title="Unicode Resources"
-css=["unicode/unicode"]
-url="unicode"
+title = "Unicode Resources"
+css = ["unicode/unicode"]
+url = "unicode"
+toc = true
 +++
 
 Created by [rebecca] with major help from [@FakeUnicode]
@@ -14,19 +15,7 @@ character sets used and supported by [just about everyone] and [all their
 software]. [Get into the details on Stack Overflow] or see some of the [Unicode
 encodings] on Wikipedia.
 
-# Table of Contents
-
-* [Charts and character data](#charts-and-character-data)
-* [String analysis](#string-analysis)
-* [Search](#search)
-* [Shape recognition](#shape-recognition)
-* [Conversion (programming)](#conversion-programming)
-* [Conversion (decorative or linguistic)](#conversion-decorative-or-linguistic)
-* [Coverage: fonts & support](#coverage-fonts-support)
-* [Emoji](#emoji)
-* [ASCII/Unicode art & Kaomoji](#ascii-unicode-art-kaomoji)
-* [Inserting characters](#inserting-characters)
-* [Misc.](#misc)
+{{< toc >}}
 
 # Charts and character data
 

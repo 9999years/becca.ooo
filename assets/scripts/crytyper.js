@@ -1,3 +1,5 @@
+import { $ } from "./fake.js"
+
 // actual code is at crytype()
 // license: mit/expat
 // code makes heavy use of prototyping, specifically Array.fromString() and
@@ -6,14 +8,14 @@
 // little weird. events are at the very bottom of the code
 
 //init variables
-var textIn            = $("in")
+var textIn        = $("in")
 	,textOut      = $("out")
 	,redoButton   = $("redo_button")
 	,cryRange     = $("crying_range")
 	,textFiltered = ""
 	,textRaw      = "Hello"
 	,scale        = 1
-	
+
 
 //probabilities of different cry-typing aspects as probabilities (out of 100)
 //these are per-letter
@@ -33,9 +35,6 @@ limits = {
 	remove:    { min:  1, max: 2 }
 }
 
-//hahaha
-function $(id) { return document.getElementById(id); }
-
 //returns true if a probability% chance happens
 function yes(probability) {
 	return Math.random() * 100 < probability * scale
@@ -54,7 +53,7 @@ function randChar() {
 
 //returns an arr of `len` rand codepoints from randChar()
 function keymash(len) {
-	out = []
+	const out = []
 	for(var i = 0; i < len; i++) {
 		out.push(randChar())
 	}
@@ -270,10 +269,10 @@ textOut.onfocus = e => {
 	selectAll()
 }
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", () => {
 	//focus on textbox to allow quick composition/replacement
 	//this also selects all
 	refreshProbabilities()
 	textIn.focus()
 	handleInput()
-}
+})

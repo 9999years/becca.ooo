@@ -16,8 +16,8 @@ structure:
   .photo = div.triangle & img
 -->
 <!-- link if applicable; mark url as trusted -->
-<div>
-  <div>{{with .url}}<a href="{{. | safeURL}}">{{end}}
+<tr>
+  <td>{{with .url}}<a href="{{. | safeURL}}">{{end}}
   {{with .name}}{{.}}{{end}}{{with .url}}</a>{{end}}
   <!-- put features in parens, and a linebreak before them if the
   features + the title is > 40 chars -->
@@ -25,7 +25,7 @@ structure:
     {{if gt (add (len .name) (len .features)) 40}}<br>{{end}}
     ({{.features}})
   {{end}}
-  </div>
-  <div>{{.price}}</div>
-  {{with .photo}}{{template "photo" .}}{{end}}
+  </td>
+  <td>{{.price}}
+  {{with .photo}}{{template "photo" .}}{{end}}</td>
 </div>

@@ -1,9 +1,8 @@
 +++
 title="Brandeis Course Catalog Statistics"
 description="An analysis of 13 years of Brandeis course catalogs"
-css=["google-charts", "brandeis/catalog-stats"]
+css=["brandeis/catalog-stats"]
 js=["https://www.gstatic.com/charts/loader.js", "brandeis/catalog-stats"]
-no_default_includes=true
 +++
 
 I recently scraped the entire [Brandeis digital course catalog][catalog]. Grab

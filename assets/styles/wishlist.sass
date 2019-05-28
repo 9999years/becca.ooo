@@ -15,53 +15,45 @@ $max-photo-height: 250px
 main
   margin-bottom: $max-photo-height / 2 + $font-size
 
-  div:hover > .photo
-    display: flex
+tr
+  td, th
+    // so photos are positioned relative to the item
+    position: relative
 
-  .photo
-    position: absolute
-    top: 20px
-    left: 70%
-    display: none
-    z-index: 10
-    transform: translateY(-50%)
-    border: $photo-border-width solid $photo-border
-    margin-left: 1.5em
-    width: unset
+    padding-bottom: 0.25em
 
-    & > img
-      overflow: hidden
-
-    .triangle
-      $size: 10px
-      @include triangle-left($size, $photo-border)
-      position: absolute
-      left: -$size - $photo-border-width
-      top: 50%
-      transform: translateY(-12px)
-
-  & >
-    div
-      // so photos are positioned relative to the item
-      position: relative
-      // photos at left of item not left of the whole body text block
-      margin: $font-size / 2 0
-
-    div
-      display: flex
+    &:last-child // right (price) column
+      width: 3em
       text-align: right
 
-    div > div // right (price) column
-      width: 3em
-      margin: 0 0.25em
+  div > div:first-child
+    width: 60%
 
-    div > div:first-child
-      width: 60%
+tr:hover .photo
+  display: flex
+
+.photo
+  position: absolute
+  top: 20px
+  left: 100%
+  display: none
+  z-index: 10
+  transform: translateY(-50%)
+  border: $photo-border-width solid $photo-border
+  margin-left: 1.5em
+  width: unset
+
+  & > img
+    overflow: hidden
+
+  .triangle
+    $size: 10px
+    @include triangle-left($size, $photo-border)
+    position: absolute
+    left: -$size - $photo-border-width
+    top: 50%
+    transform: translateY(-12px)
 
 @media all and (max-width: 640px)
-  div:hover > .photo
+  tr:hover > .photo
     display: none
-
-@media all and (max-width: 600px)
-  main > div > div:first-child
-    width: 80%

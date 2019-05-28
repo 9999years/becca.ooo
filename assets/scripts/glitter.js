@@ -13,6 +13,7 @@ let bg = [0, 17, 34, 0xff]
 let pixelScale = window.devicePixelRatio
 var frame = 0
 var screen
+var ctx
 
 //plot a pixel on arbitrary image data
 //image = ctx.createImageData...
@@ -177,7 +178,7 @@ function render(time) {
 
 function init() {
 	//initialize cvs, ctx, etc
-	cvs = $("main-canvas")
+	const cvs = $("main-canvas")
 	var maxWidth = cvs.parentElement.clientWidth
 	var frameWidth = maxWidth * pixelScale
 	var frameHeight = frameWidth
@@ -209,3 +210,5 @@ function init() {
 
 	window.requestAnimationFrame(render)
 }
+
+document.addEventListener("DOMContentLoaded", init)

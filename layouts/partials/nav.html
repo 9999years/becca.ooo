@@ -1,0 +1,7 @@
+{{- if not (.Param "hide-nav")}}
+	<span class="sep">→</span>
+	<nav>{{range $i, $link := .Site.Data.nav.links}}
+	{{- if $i}} | {{end -}}
+	<a href="{{with $link.url}}{{.}}{{else}}/{{$link.txt}}{{end}}">{{$link.txt}}</a>
+	{{end}}</nav>
+{{- end -}}

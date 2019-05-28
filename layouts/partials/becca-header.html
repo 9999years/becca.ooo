@@ -6,19 +6,30 @@
 {{- range .Param "css"}}
 	<link rel=stylesheet type=text/css href="{{printf "/css/%v.css" . | relURL}}">
 {{- end -}}
+{{- if .Param "toc"}}
+	<link rel=stylesheet type=text/css href="/css/toc.css">
+{{- end -}}
 {{- with .Param "onload"}}<body onload="{{. | safeJS}}">{{end -}}
 <div id=container>
-  {{- if not (.Param "hide-header") -}}
-	<header>
-    {{- template "title" . -}}
-    {{- template "nav" . -}}
+{{- if not (.Param "hide-header") -}}
+	<header
+		{{- if .Param "center" }} class="center"{{end -}}
+		>
+	{{- partial "title" . -}}
+	{{- partial "nav" . -}}
 	</header>
-  {{- end -}}
-	{{- if not (.Param "hide-body-copy-tag")}}
-		<main{{with .Param "body-copy-id"}} id="{{.}}"{{end -}}
-		{{- if or (.Param "body-copy-classes") (.Param "center")}} class="
-		{{- if .Param "center" -}}center {{end}}
-		{{- .Param "body-copy-classes"}}"{{end -}}
-		{{- with .Param "body-copy-style"}} style="{{.}}"{{end}}>
-	{{- end -}}
-	{{with .Title}}<h1 id="{{urlize .}}">{{.}}</h1>{{end -}}
+{{- end -}}
+{{- if .Param "toc" -}}
+<div id=toc>
+	<h1>Contents</h1>
+	{{ .TableOfContents }}
+</div>
+{{- end -}}
+{{- if not (.Param "hide-body-copy-tag")}}
+	<main id="main"
+	{{- if or (.Param "body-copy-classes") (.Param "center")}} class="
+	{{- if .Param "center" -}}center {{end}}
+	{{- .Param "body-copy-classes"}}"{{end -}}
+	{{- with .Param "body-copy-style"}} style="{{.}}"{{end}}>
+{{- end -}}
+{{with .Title}}<h1 class="title" id="{{urlize .}}">{{.}}</h1>{{end -}}

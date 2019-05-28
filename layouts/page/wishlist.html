@@ -1,7 +1,12 @@
 {{partial "becca-header.html" .}}
 {{.Content}}
-<div><div>item</div><div>usd</div></div>
-{{range .Site.Data.wishlist}}
-  {{- partial "wishlist-item.html" . -}}
-{{end}}
+<table>
+	<tr>
+		<th>item</th>
+		<th>usd</th>
+	</tr>
+	{{range .Site.Data.wishlist}}
+		{{- partial "wishlist-item.html" . -}}
+	{{end}}
+</table>
 {{partial "becca-footer.html" .}}

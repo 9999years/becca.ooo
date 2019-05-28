@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"target": "ES6",
+		"module": "ES6",
+		"lib": [
+			"esnext",
+			"dom.iterable",
+			"dom"
+		],
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"noFallthroughCasesInSwitch": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"allowJs": true,
+		"jsx": "react",
+		"jsxFactory": "h",
+		"rootDir": "assets/scripts",
+		"outDir": "static/js"
+	},
+	"include": [
+		"assets/scripts/**/*"
+	],
+	"exclude": [
+		"public/**",
+		"static/**"
+	]
+}

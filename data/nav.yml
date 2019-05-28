@@ -1,0 +1,7 @@
+links:
+    - txt: about
+    - txt: projects
+    - txt: art
+    - url: /resume.pdf
+      txt: résumé
+    - txt: contact
